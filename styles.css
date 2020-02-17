@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  display: grid;
+  grid-template-rows: [nav-start] 10vh [nav-end hero-start] 90vh [hero-end benefits-start]max-content [benefits-end gen-start]max-content [gen-end program-start] max-content[program-end cta-start] max-content[cta-end footer-start] 10vh [footer-end];
+}
+
+.nav {
+  background-color: darkgray;
+  display: grid;
+  grid-template-columns: 65% repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.link {
+  height: 1rem;
+  width: 8rem;
+  background-color: #fdfdfd;
+  list-style: none;
+}
+
+.link:nth-child(1) {
+  justify-self: left;
+  margin-left: 5rem;
+  height: 4rem;
+}
+
+.link--blue {
+  background-color: darkblue;
+  height: 2rem;
+}
+.hero {
+  background-color: gray;
+}
+.benefits {
+  background-color: #fdfdfd;
+}
+.getstarted {
+  background-color: lightgray;
+}
+.programs {
+  background-color: #fdfdfd;
+}
+.signup {
+  background-color: darkblue;
+}
+
+.footer {
+  background-color: darkgray;
+}
