@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+li {
+  list-style: none;
+}
+
 .nav {
   background-color: darkgray;
   display: grid;
@@ -29,7 +33,6 @@ body {
   height: 1rem;
   width: 8rem;
   background-color: #fdfdfd;
-  list-style: none;
 }
 
 .link:nth-child(1) {
@@ -47,7 +50,6 @@ body {
   display: grid;
   align-items: center;
   justify-content: center;
-  list-style: none;
 }
 
 .hero-content {
@@ -75,7 +77,54 @@ body {
 
 .benefits {
   background-color: #fdfdfd;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  justify-items: center;
+  padding: 8rem 0;
 }
+
+.benefits-box {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.img {
+  width: 4rem;
+  height: 4rem;
+  background-color: lightgray;
+}
+
+.benefits-box .img {
+  grid-row: 1 / -1;
+  justify-self: right;
+}
+
+.dark-line,
+.grey-line--long,
+.grey-line--short {
+  height: 0.5rem;
+}
+
+.dark-line {
+  background-color: darkgray;
+  width: 6rem;
+}
+.grey-line--long,
+.grey-line--short {
+  background-color: lightgray;
+}
+.grey-line--long {
+  width: 12rem;
+}
+.grey-line--short {
+  width: 9rem;
+}
+
 .getstarted {
   background-color: lightgray;
 }
