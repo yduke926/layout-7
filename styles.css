@@ -188,9 +188,20 @@ li {
 
 /* SIGN UP  */
 .signup {
-  background-color: darkblue;
+  background-color: rgba(17, 17, 224, 0.589);
+  padding: 5rem;
+
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  align-items: center;
+  justify-items: start;
+  column-gap: 2rem;
 }
 
+.signup .link:nth-child(1) {
+  width: 70%;
+  justify-self: end;
+}
 /* FOOTER */
 .footer {
   background-color: darkgray;
