@@ -13,7 +13,7 @@ html {
 
 body {
   display: grid;
-  grid-template-rows: [nav-start] 10vh [nav-end hero-start] 90vh [hero-end benefits-start]max-content [benefits-end gen-start]max-content [gen-end program-start] max-content[program-end cta-start] max-content[cta-end footer-start] 10vh [footer-end];
+  grid-template-rows: [nav-start] 10vh [nav-end hero-start] 90vh [hero-end benefits-start]max-content [benefits-end gen-start]max-content [gen-end program-start] max-content[program-end cta-start] max-content[cta-end footer-start] 20vh [footer-end];
   overflow-x: hidden;
 }
 
@@ -116,7 +116,7 @@ li {
 }
 
 .dark-line {
-  background-color: darkgray;
+  background-color: rgba(66, 66, 66, 0.767);
   width: 40%;
 }
 .grey-line--long,
@@ -205,4 +205,13 @@ li {
 /* FOOTER */
 .footer {
   background-color: darkgray;
+  padding: 3rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-box {
+  display: grid;
+  row-gap: 1rem;
+  align-content: center;
 }
