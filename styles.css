@@ -45,6 +45,8 @@ li {
   background-color: darkblue;
   height: 2rem;
 }
+
+/* HERO */
 .hero {
   background-color: gray;
   display: grid;
@@ -74,6 +76,8 @@ li {
   height: 4rem;
   width: 12rem;
 }
+
+/* BENEFITS */
 
 .benefits {
   background-color: #fdfdfd;
@@ -112,29 +116,66 @@ li {
 
 .dark-line {
   background-color: darkgray;
-  width: 6rem;
+  width: 10rem;
 }
 .grey-line--long,
 .grey-line--short {
   background-color: lightgray;
 }
 .grey-line--long {
-  width: 12rem;
+  width: 20rem;
 }
 .grey-line--short {
-  width: 9rem;
+  width: 15rem;
 }
 
+/* GET STARTED */
+
 .getstarted {
-  background-color: lightgray;
+  background-color: rgba(228, 228, 228, 0.712);
+  padding: 3rem 8rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
+
+.getstarted-content {
+  padding: 3rem;
+  display: grid;
+  row-gap: 1.3rem;
+}
+
+.getstarted-content .dark-line {
+  width: 40%;
+}
+.getstarted-content .grey-line--long {
+  width: 60%;
+}
+.getstarted-content .grey-line--short {
+  width: 50%;
+}
+.getstarted-video {
+  width: 100%;
+  height: 100%;
+
+  background-color: #fdfdfd;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PROGRAMS */
 .programs {
   background-color: #fdfdfd;
 }
+
+/* SIGN UP  */
 .signup {
   background-color: darkblue;
 }
 
+/* FOOTER */
 .footer {
   background-color: darkgray;
 }
