@@ -24,11 +24,19 @@ li {
 .nav {
   background-color: darkgray;
   display: grid;
-  grid-template-columns: 65% repeat(5, 1fr);
+  grid-template-columns: 40% repeat(5, 1fr);
   align-items: center;
   justify-items: center;
 }
-
+@media only screen and (max-width: 500px) {
+  .nav-link {
+    display: none;
+  }
+  .nav li:last-of-type {
+    grid-column: 5 / 6;
+    grid-row: 1 / -1;
+  }
+}
 .link {
   height: 1rem;
   width: 8rem;
